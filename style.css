@@ -28,7 +28,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   body {
     font-size: 14px;
     padding: 10px;
