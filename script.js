@@ -81,6 +81,8 @@ function avancarVideo() {
   if (indice < videos.length) {
     carregarVideo();
   } else {
+    // Pausa o vídeo antes de finalizar
+    document.getElementById("video").pause();
     finalizar();
   }
 }
@@ -178,4 +180,10 @@ function zerarRanking() {
   localStorage.removeItem("ranking");
   alert("Ranking Reset!");
   mostrarRanking(); // Atualiza a tela após zerar
+}
+
+function zerarUsuarios() {
+  localStorage.removeItem("usuarios");
+  alert("Lista de usuários resetada!");
+  mostrarUsuarios(); // Atualiza a tela após zerar
 }
