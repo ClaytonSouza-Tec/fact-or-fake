@@ -1,0 +1,400 @@
+body {
+  margin: 10px;
+  margin-right: 20px;
+  margin-left: 30px;
+  padding: 20px;
+  background-image: url("Imagens/retrogaming.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /*background-color: #adb815;*/
+  /*color: #a11d1d;*/
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 180px;
+  width: 100%;
+  /*background-color: #adb815;*/
+  /*color: #a11d1d;*/
+  border-radius: 10px;
+}
+
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-right: 150px;
+  margin-left: 10px;
+  margin-top: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.logo:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #051eff); /* brilho amarelo */
+}
+
+
+.texto-gif {
+  width: 900px;
+  height: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-size: 6150px 180px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.texto-gif:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #ffaf04); /* brilho amarelo */
+}
+
+
+/* Corpo */
+.corpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+  width: 100%;
+  /*background-color: #e67070;*/
+  color: #f7f4f4;
+  border-radius: 10px;
+}
+
+
+.texto-animado {
+  font-family: 'Courier New', monospace;
+  font-size: 52px;
+  margin: 0px;
+  margin-right: 10px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid #fff;
+  width: 100;
+  animation: digitar 4s steps(50, end) forwards, piscar 0.7s step-end infinite;
+}
+@keyframes digitar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+@keyframes piscar {
+  50% { border-color: transparent; }
+}
+
+
+#video-titulo {
+  font-family: 'Courier New', monospace;
+  font-size: 42px;
+  margin: 0px;
+  margin-right: 10px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0px solid #fff;
+  width: 100;
+  animation: digitar 4s steps(50, end) forwards, piscar 0.7s step-end infinite;
+}
+
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tema-overlay {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.botao-Fato {
+  width: 170px;
+  height: auto;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-Fato:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #15ff00); /* brilho amarelo */
+}
+
+
+.botao-Fake {
+  width: 160px;
+  height: auto;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-Fake:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #e71d0e); /* brilho amarelo */
+}
+
+
+.botao-Next {
+  width: 160px;
+  height: auto;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-Next:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #240ee7); /* brilho amarelo */
+}
+
+
+.botao-iniciar {
+  margin: -80px;
+  padding: 10px 20px;
+  width: 250px;
+  height: 150px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-iniciar:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #13e22f); /* brilho amarelo */
+}
+
+
+.botao-JogarNovamente {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-JogarNovamente:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #ffc400); /* brilho amarelo */
+}
+
+
+.botao-ZerarRanking {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-ZerarRanking:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #a200ff); /* brilho amarelo */
+}
+
+
+.botao-TodosJogadores {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.botao-TodosJogadores:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #e8f808); /* brilho amarelo */
+}
+
+
+.campo-nome {
+  width: 700px;
+  height: 60px;
+  margin: 100px;
+  border-radius: 10px;
+  border: none; /* remove a borda */
+  background-color: transparent; /* fundo transparente */
+  background-image: url("Imagens/C-Texto.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 750px 80px;
+  padding-left: 20px; /* espaço para a imagem */
+  text-align: center;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.campo-nome:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #bdbab1); /* brilho amarelo */
+}
+
+
+.imgfato {
+  position: fixed;
+  right: 260px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 200px;
+  transform: rotate(20deg);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.imgfato:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #15ff00); /* brilho amarelo */
+}
+
+.imgfake {
+  position: fixed;
+  right: 1300px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 200px;
+  transform: rotate(-30deg);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.imgfake:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #ff3f0f); /* brilho amarelo */
+}
+
+
+.trofeu-container {
+  position: fixed;
+  right: 360px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.trofeu {
+  width: 250px;
+  height: 250px;
+  transform: rotate(20deg);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.trofeu:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #ffee00); /* brilho amarelo */
+}
+
+
+#ranking {
+  text-align: left;
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 10;
+}
+
+
+#resultado {
+  font-family: 'Courier New', monospace;
+  font-size: 23px;
+  margin: 25px;
+  margin-right: 10px;
+  color: #fff;
+  width: 100;
+}
+
+
+#usuarios-container {
+  text-align: left;
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 10;
+  font-family: 'Courier New', monospace;
+  font-size: 23px;
+  margin: 25px;
+  margin-right: 10px;
+  color: #fff;
+  width: 100;
+  max-height: calc(70vh - 100px); /* altura máxima: tela menos espaço do rodapé/cabeçalho */
+  overflow-y: auto;                /* ativa scroll vertical */
+  margin-bottom: 10px;             /* espaço antes do rodapé */
+}
+
+
+/* Rodapé */
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #0c0c0c;
+  color: #4244b4;
+  border-radius: 10px;
+}
+
+
+#linkedin {
+  float: left;
+  font-size: 42px;
+  width: 100px;
+  padding: 5px;
+  margin: 15px;
+  color: #0e76a8;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+#linkedin:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #0e76a8); /* brilho amarelo */
+}
+
+
+#github {
+  float: left;
+  font-size: 26px;
+  width: 100px;
+  padding: 5px;
+  margin: 15px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+#github:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #a7a1a1); /* brilho amarelo */
+}
+
+
+#udemy {
+  float: left;
+  font-size: 22px;
+  width: 100px;
+  padding: 5px;
+  margin: 15px;
+  color: #831583;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+#udemy:hover {
+  transform: scale(1.1); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #c637e2); /* brilho amarelo */
+}
+
+
+

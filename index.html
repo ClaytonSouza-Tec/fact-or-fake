@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check - Fact or Fake - Videos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+  
+
+  <!-- Cabeçalho -->
+  <div class="cabecalho">
+    <a href="index.html">
+      <img src="Imagens/ClaytonRSouza.png" alt="Logo Clayton" class="logo" />
+    </a>
+      <img src="Imagens/Text-Cab.png" alt="Texto animado" class="texto-gif" />
+  </div> 
+
+
+  <!-- Corpo -->
+  <div class="corpo">
+   <div id="app">
+    <div id="inicio">
+      <h1 class="texto-animado">Enter your Name</h1>
+      <input type="text" id="nome" placeholder="Enter your Name" class="campo-nome" />
+      <img src="Imagens/B-Start.png" alt="Iniciar" class="botao-iniciar" onclick="iniciar()" />
+    </div>
+   </div>
+  
+    <div id="quiz" style="display:none;">
+   <h2 id="video-titulo"></h2>
+
+  <div class="video-container">
+    <video id="video" width="640" controls autoplay></video>
+    <div id="video-tema" class="tema-overlay"></div>
+  </div>
+
+  <div id="botoes">
+    <img src="Imagens/B-On.png" alt="Escolha" class="botao-Fato" onclick="responder('Fato')"> </button>
+    <img src="Imagens/B-Off.png" alt="Escolha" class="botao-Fake" onclick="responder('Fake')"> </button>
+  </div>
+      
+  <div id="explicacao-controles" style="display:none;">
+     <div class="fatofake-container">
+       <img id="imagem-resposta" style="display: none" />
+     </div>
+       <img src="Imagens/B-Next.png" alt="Avancar" class="botao-Next" onclick="avancarVideo()"> </button>
+      </div>
+    </div>
+  
+
+    <div id="resultado" style="display:none;">
+      <h2>Final Result</h2>
+
+        <div class="trofeu-container">
+          <img src="Imagens/trofeu.png" alt="Troféu" class="trofeu" />
+        </div>
+
+        <p id="pontuacao"></p>
+          <h3>Ranking</h3>
+          <ul id="ranking"></ul>
+          <img src="Imagens/B-Again.png" alt="Jogar Novamente" class="botao-JogarNovamente" onclick="voltarInicio()">
+          <img src="Imagens/B-Reset.png" alt="Zerar Ranking" class="botao-ZerarRanking" onclick="zerarRanking()" />  
+          <img src="Imagens/B-Players.png" alt="Todos Jogadores" class="botao-TodosJogadores" onclick="mostrarUsuarios()" /> 
+        </div>
+    
+        <div id="usuarios-container" style="display:none;">
+          <h2>User list</h2>
+          <ul id="lista-usuarios"></ul>
+        </div>
+    </div>
+
+
+    <!-- Rodapé -->
+    <div class="rodape">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <a href="https://www.linkedin.com/in/clayton-rodrigues-souza-5276b875" target="_blank" id="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/ClaytonSouza-Tec/lab-fact-or-fake" target="_blank" id="github">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+
+    <a href="https://www.udemy.com/user/clayton-souza-4/" target="_blank" id="udemy">
+      <i class="fas fa-graduation-cap fa-2x"></i>
+    </a>
+
+    <p>Developed by CRSouza © 2025</p>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
