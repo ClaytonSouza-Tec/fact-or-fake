@@ -28,6 +28,21 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .logo {
   width: 200px;
   height: auto;
