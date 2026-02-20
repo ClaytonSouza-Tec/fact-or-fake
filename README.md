@@ -514,43 +514,6 @@ localStorage.getItem("usuarios")
 
 ---
 
-## 🚀 Como Usar
-
-### **Instalação**
-```bash
-# Clone o repositório
-git clone https://github.com/ClaytonSouza-Tec/lab-fact-or-fake.git
-
-# Entre no diretório
-cd FactOrFake
-
-# Abra no navegador
-open index.html
-# ou
-firefox index.html
-# ou
-chrome index.html
-```
-
-### **Modo de Jogo**
-1. Acesse `index.html` no navegador
-2. Digite seu **nome**
-3. Clique em **"Start"**
-4. Assista cada vídeo e analise
-5. Escolha **"Fato"** ou **"Fake"**
-6. Veja a **explicação** com vídeo
-7. Clique **"Next"** para próximo vídeo
-8. Complete todos os 10 vídeos
-9. Confira sua **pontuação** no ranking
-
-### **Recursos**
-- 🏆 Veja Top 10 jogadores
-- 👥 Visualize todos os usuários
-- 🔄 Jogar novamente
-- 🗑️ Zerar ranking (mantém histórico de usuários)
-
----
-
 ## 📊 Sistema de Pontuação
 
 ```
