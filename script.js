@@ -6,7 +6,7 @@ const videos = [
   { url: "Videos/Video5-Fake.mp4", explicacaoUrl: "Videos/Video5-Explicacao.mp4", respostaCorreta: "Fake", tema: "Espelhos são portais para outro mundo?" },
   { url: "Videos/Video6-Fato.mp4", explicacaoUrl: "Videos/Video6-Explicacao.mp4", respostaCorreta: "Fato", tema: "Uma carpa na China pode ter traços humano?" },
   { url: "Videos/Video7-Fake.mp4", explicacaoUrl: "Videos/Video7-Explicacao.mp4", respostaCorreta: "Fake", tema: "Câmera de segurnaça captura imagem Fantasmagórica?" },
-  { url: "Videos/video8-Fato.mp4", explicacaoUrl: "Videos/Video8-Explicacao.mp4", respostaCorreta: "Fato", tema: "Homem toca óleo quente e não se queima?" },
+  { url: "Videos/Video8-Fato.mp4", explicacaoUrl: "Videos/Video8-Explicacao.mp4", respostaCorreta: "Fato", tema: "Homem toca óleo quente e não se queima?" },
   { url: "Videos/Video9-Fato.mp4", explicacaoUrl: "Videos/Video9-Explicacao.mp4", respostaCorreta: "Fato", tema: "Tubarão bebê Mutante?" },
   { url: "Videos/Video10-Fake.mp4", explicacaoUrl: "Videos/Video10-Explicacao.mp4", respostaCorreta: "Fake", tema: "Exército de Naves Alienígenas?" },
 ];

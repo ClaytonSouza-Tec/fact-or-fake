@@ -6,6 +6,7 @@ body {
   background-image: url("Imagens/retrogaming.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   height: auto;
   font-family: Arial, sans-serif;
@@ -14,26 +15,35 @@ body {
   /*color: #a11d1d;*/
 }
 
+/* Global box sizing for predictable sizing */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+
 
 /* Cabeçalho */
 .cabecalho {
   display: flex;
   align-items: center;
   justify-content: left;
-  height: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
   width: 100%;
   /*background-color: #adb815;*/
   /*color: #a11d1d;*/
   border-radius: 10px;
+  z-index: 1000;
 }
 
 
 .logo {
-  width: 200px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 180px;
   height: auto;
-  margin-right: 150px;
-  margin-left: 10px;
-  margin-top: 100px;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -45,13 +55,15 @@ body {
 
 
 .texto-gif {
-  width: 900px;
-  height: 150px;
-  margin-right: 100px;
-  margin-left: 100px;
+  position: fixed;
+  left: 470px;
+  top: 40px;
+  width: 1000px;
+  height: 200px;
   background-size: 6150px 180px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 1001;
 }
 .texto-gif:hover {
   transform: scale(1.2); /* efeito de zoom */
@@ -61,32 +73,63 @@ body {
 
 /* Corpo */
 .corpo {
+  position: fixed;
+  top: 140px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 570px;
+  height: calc(100vh - 260px);
   width: 100%;
   /*background-color: #e67070;*/
   color: #f7f4f4;
   border-radius: 10px;
+  z-index: 500;
+}
+
+/* Vídeo e controles responsivos */
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 600;
+}
+
+#video {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 
 .texto-animado {
+  position: fixed;
   font-family: 'Courier New', monospace;
-  font-size: 52px;
-  margin: 0px;
-  margin-right: 10px;
+  font-size: 48px;
+  top: 35%;
+  left: 400px;
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
   border-right: 5px solid #fff;
-  width: 100;
+  width: 60%;
   animation: digitar 4s steps(50, end) forwards, piscar 0.7s step-end infinite;
 }
 @keyframes digitar {
-  from { width: 0%; }
-  to { width: 100%; }
+  from { width: 10%; }
+  to { width: 60%; }
 }
 @keyframes piscar {
   50% { border-color: transparent; }
@@ -96,13 +139,14 @@ body {
 #video-titulo {
   font-family: 'Courier New', monospace;
   font-size: 42px;
-  margin: 0px;
+  margin: 180px;
+  margin-bottom: 8px;
   margin-right: 10px;
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0px solid #fff;
-  width: 100;
+  border-right: 10px solid #fff;
+  width: 60%;
   animation: digitar 4s steps(50, end) forwards, piscar 0.7s step-end infinite;
 }
 
@@ -127,10 +171,11 @@ body {
 
 
 .botao-Fato {
-  width: 170px;
+  width: 18vw;
+  max-width: 170px;
   height: auto;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -142,7 +187,8 @@ body {
 
 
 .botao-Fake {
-  width: 160px;
+  width: 18vw;
+  max-width: 160px;
   height: auto;
   margin: 10px;
   padding: 10px 20px;
@@ -157,7 +203,8 @@ body {
 
 
 .botao-Next {
-  width: 160px;
+  width: 16vw;
+  max-width: 160px;
   height: auto;
   margin: 10px;
   padding: 10px 20px;
@@ -172,13 +219,18 @@ body {
 
 
 .botao-iniciar {
-  margin: -80px;
+  position: fixed;
+  top: 550px;
+  left: 44%;
+  width: 16vw;
+  max-width: 260px;
+  height: auto;
+  margin: 0;
   padding: 10px 20px;
-  width: 250px;
-  height: 150px;
-  border-radius: 100px;
+  font-size: 16px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 600;
 }
 .botao-iniciar:hover {
   transform: scale(1.2); /* efeito de zoom */
@@ -187,7 +239,10 @@ body {
 
 
 .botao-JogarNovamente {
-  width: 80px;
+  position: fixed;
+  left: 48%;
+  top: 80%;
+  width: 90px;
   height: auto;
   margin: 10px;
   padding: 5px 5px;
@@ -201,9 +256,12 @@ body {
 
 
 .botao-ZerarRanking {
-  width: 100px;
+  position: fixed;
+  left: 59%;
+  top: 80%;
+  width: 110px;
   height: auto;
-  margin: 5px;
+  margin: 10px;
   padding: 5px 5px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -215,9 +273,12 @@ body {
 
 
 .botao-TodosJogadores {
+  position: fixed;
+  left: 35%;
+  top: 80%;
   width: 100px;
   height: auto;
-  margin: 5px;
+  margin: 10px;
   padding: 5px 5px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -229,6 +290,9 @@ body {
 
 
 .campo-nome {
+  position: fixed;
+  left: 500px;
+  top: 350px;
   width: 700px;
   height: 60px;
   margin: 100px;
@@ -237,8 +301,8 @@ body {
   background-color: transparent; /* fundo transparente */
   background-image: url("Imagens/C-Texto.png");
   background-repeat: no-repeat;
-  background-position: 5px center;
-  background-size: 750px 80px;
+  background-position: 15px center;
+  background-size: 700px 80px;
   padding-left: 20px; /* espaço para a imagem */
   text-align: center;
   font-size: 20px;
@@ -252,15 +316,25 @@ body {
 }
 
 
+
+
+
+
+.campo-nome:hover {
+  transform: scale(1.2); /* efeito de zoom */
+  filter: brightness(2.3) drop-shadow(0 0 20px #bdbab1); /* brilho amarelo */
+ }
+
+
 .imgfato {
   position: fixed;
-  right: 350px;
-  top: 35%;
-  transform: translateY(-50%);
-  width: 350px;
-  height: 200px;
-  transform: rotate(20deg);
+  right: 400px;
+  top: 50%;
+  width: 180px;
+  height: auto;
+  transform: translateY(-50%) rotate(20deg);
   transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 550;
 }
 .imgfato:hover {
   transform: scale(1.1); /* efeito de zoom */
@@ -269,13 +343,13 @@ body {
 
 .imgfake {
   position: fixed;
-  right: 1300px;
-  top: 35%;
-  transform: translateY(-50%);
-  width: 350px;
-  height: 200px;
-  transform: rotate(-30deg);
+  left: 400px;
+  top: 50%;
+  width: 180px;
+  height: auto;
+  transform: translateY(-50%) rotate(-30deg);
   transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 550;
 }
 .imgfake:hover {
   transform: scale(1.1); /* efeito de zoom */
@@ -285,14 +359,15 @@ body {
 
 .trofeu-container {
   position: fixed;
-  right: 360px;
+  right: 340px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 550;
 }
 .trofeu {
-  width: 250px;
-  height: 250px;
-  transform: rotate(20deg);
+  width: 140px;
+  height: auto;
+  transform: rotate(12deg);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 .trofeu:hover {
@@ -305,7 +380,7 @@ body {
   text-align: left;
   list-style-position: inside;
   list-style-type: none;
-  padding-left: 10;
+  padding-left: 650px;
 }
 
 
@@ -315,7 +390,11 @@ body {
   margin: 25px;
   margin-right: 10px;
   color: #fff;
-  width: 100;
+  width: 100%;
+  position: fixed;
+  top: 250px;
+  left: -10px;
+  right: 20px;
 }
 
 
@@ -323,13 +402,13 @@ body {
   text-align: left;
   list-style-position: inside;
   list-style-type: none;
-  padding-left: 10;
+  padding-left: 450px;
   font-family: 'Courier New', monospace;
   font-size: 23px;
-  margin: 25px;
-  margin-right: 10px;
+  margin: 20px;
+  margin-right: 100px;
   color: #fff;
-  width: 100;
+  width: 100%;
   max-height: calc(70vh - 100px); /* altura máxima: tela menos espaço do rodapé/cabeçalho */
   overflow-y: auto;                /* ativa scroll vertical */
   margin-bottom: 10px;             /* espaço antes do rodapé */
@@ -338,14 +417,19 @@ body {
 
 /* Rodapé */
 .rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: #0c0c0c;
   color: #4244b4;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  z-index: 900;
 }
 
 
