@@ -561,7 +561,7 @@ html, body { height: 100%; }
 
   .botao-iniciar {
     position: fixed;
-    top: 72%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     width: 80vw;
@@ -712,7 +712,7 @@ html, body { height: 100%; }
 
   .botao-iniciar {
     position: fixed;
-    top: 72%;
+    top: 78%;
     left: 50%;
     transform: translateX(-50%);
     width: 85vw;
