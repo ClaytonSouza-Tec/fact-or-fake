@@ -1,14 +1,14 @@
 const videos = [
-  { url: "videos/Video1-Fake.mp4", explicacaoUrl: "videos/Video1-Explicacao.mp4", respostaCorreta: "Fake", tema: "Formações em fumaças são forças de outro mundo?" },
-  { url: "videos/Video2-Fato.mp4", explicacaoUrl: "videos/Video2-Explicacao.mp4", respostaCorreta: "Fato", tema: "Pedra da Somalia é um Meteorito?" },
-  { url: "videos/Video3-Fato.mp4", explicacaoUrl: "videos/Video3-Explicacao.mp4", respostaCorreta: "Fato", tema: "Luzes no céu do Mexico são OVNIS?" },
-  { url: "videos/Video4-Fake.mp4", explicacaoUrl: "videos/Video4-Explicacao.mp4", respostaCorreta: "Fake", tema: "Criatura seria um Chupa Cabra?" },
-  { url: "videos/Video5-Fake.mp4", explicacaoUrl: "videos/Video5-Explicacao.mp4", respostaCorreta: "Fake", tema: "Espelhos são portais para outro mundo?" },
-  { url: "videos/Video6-Fato.mp4", explicacaoUrl: "videos/Video6-Explicacao.mp4", respostaCorreta: "Fato", tema: "Uma carpa na China pode ter traços humano?" },
-  { url: "videos/Video7-Fake.mp4", explicacaoUrl: "videos/Video7-Explicacao.mp4", respostaCorreta: "Fake", tema: "Câmera de segurnaça captura imagem Fantasmagórica?" },
-  { url: "videos/video8-Fato.mp4", explicacaoUrl: "videos/Video8-Explicacao.mp4", respostaCorreta: "Fato", tema: "Homem toca óleo quente e não se queima?" },
-  { url: "videos/Video9-Fato.mp4", explicacaoUrl: "videos/Video9-Explicacao.mp4", respostaCorreta: "Fato", tema: "Tubarão bebê Mutante?" },
-  { url: "videos/Video10-Fake.mp4", explicacaoUrl: "videos/Video10-Explicacao.mp4", respostaCorreta: "Fake", tema: "Exército de Naves Alienígenas?" },
+  { url: "Videos/Video1-Fake.mp4", explicacaoUrl: "videos/Video1-Explicacao.mp4", respostaCorreta: "Fake", tema: "Formações em fumaças são forças de outro mundo?" },
+  { url: "Videos/Video2-Fato.mp4", explicacaoUrl: "videos/Video2-Explicacao.mp4", respostaCorreta: "Fato", tema: "Pedra da Somalia é um Meteorito?" },
+  { url: "Videos/Video3-Fato.mp4", explicacaoUrl: "videos/Video3-Explicacao.mp4", respostaCorreta: "Fato", tema: "Luzes no céu do Mexico são OVNIS?" },
+  { url: "Videos/Video4-Fake.mp4", explicacaoUrl: "videos/Video4-Explicacao.mp4", respostaCorreta: "Fake", tema: "Criatura seria um Chupa Cabra?" },
+  { url: "Videos/Video5-Fake.mp4", explicacaoUrl: "videos/Video5-Explicacao.mp4", respostaCorreta: "Fake", tema: "Espelhos são portais para outro mundo?" },
+  { url: "Videos/Video6-Fato.mp4", explicacaoUrl: "videos/Video6-Explicacao.mp4", respostaCorreta: "Fato", tema: "Uma carpa na China pode ter traços humano?" },
+  { url: "Videos/Video7-Fake.mp4", explicacaoUrl: "videos/Video7-Explicacao.mp4", respostaCorreta: "Fake", tema: "Câmera de segurnaça captura imagem Fantasmagórica?" },
+  { url: "Videos/video8-Fato.mp4", explicacaoUrl: "videos/Video8-Explicacao.mp4", respostaCorreta: "Fato", tema: "Homem toca óleo quente e não se queima?" },
+  { url: "Videos/Video9-Fato.mp4", explicacaoUrl: "videos/Video9-Explicacao.mp4", respostaCorreta: "Fato", tema: "Tubarão bebê Mutante?" },
+  { url: "Videos/Video10-Fake.mp4", explicacaoUrl: "videos/Video10-Explicacao.mp4", respostaCorreta: "Fake", tema: "Exército de Naves Alienígenas?" },
 ];
 
 
