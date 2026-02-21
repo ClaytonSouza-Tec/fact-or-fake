@@ -768,12 +768,12 @@ html, body { height: 100%; }
 
   .campo-nome {
     position: fixed;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     width: 85vw;
     max-width: 270px;
     height: auto;
-    top: 64%;
+    top: 44%;
     font-size: 14px;
     background-color: transparent;
     background-image: url("Imagens/C-Texto.png");
