@@ -588,7 +588,7 @@ html, body { height: 100%; }
   .imgfato,
   .imgfake {
     position: fixed;
-    top: 150px;
+    top: 250px;
     width: 100px;
     height: auto;
     transform: rotate(20deg);
