@@ -1,6 +1,6 @@
 const videos = [
   { url: "Videos/Video1-Fake.mp4", explicacaoUrl: "Videos/Video1-Explicacao.mp4", respostaCorreta: "Fake", tema: "Formações em fumaças são forças de outro mundo?" },
-  { url: "videos/Video2-Fato.mp4", explicacaoUrl: "videos/Video2-Explicacao.mp4", respostaCorreta: "Fato", tema: "Pedra da Somalia é um Meteorito?" },
+  { url: "fact-or-fake/Videos/Video2-Fato.mp4", explicacaoUrl: "videos/Video2-Explicacao.mp4", respostaCorreta: "Fato", tema: "Pedra da Somalia é um Meteorito?" },
   { url: "videos/Video3-Fato.mp4", explicacaoUrl: "videos/Video3-Explicacao.mp4", respostaCorreta: "Fato", tema: "Luzes no céu do Mexico são OVNIS?" },
   { url: "videos/Video4-Fake.mp4", explicacaoUrl: "videos/Video4-Explicacao.mp4", respostaCorreta: "Fake", tema: "Criatura seria um Chupa Cabra?" },
   { url: "videos/Video5-Fake.mp4", explicacaoUrl: "videos/Video5-Explicacao.mp4", respostaCorreta: "Fake", tema: "Espelhos são portais para outro mundo?" },
