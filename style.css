@@ -770,9 +770,9 @@ html, body { height: 100%; }
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 85vw;
     max-width: 270px;
-    height: 45px;
+    height: auto;
     top: 64%;
     font-size: 14px;
     background-color: transparent;
@@ -784,7 +784,7 @@ html, body { height: 100%; }
     padding: 0;
     text-align: center;
     z-index: 601;
-    box-sizing: border-box;
+ 
   }
 
   #resultado {
