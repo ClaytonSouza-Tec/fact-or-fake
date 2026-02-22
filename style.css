@@ -73,16 +73,16 @@ html, body { height: 100%; }
 
 .botao-TodosJogadores-header {
   position: absolute;
-  left: 5px;
-  top: 110px;
-  width: 60px;
+  right: 30px;
+  top: 20px;
+  width: 100px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
   z-index: 1002;
 }
 .botao-TodosJogadores-header:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   filter: brightness(2.3) drop-shadow(0 0 20px #e8f808);
 }
 
@@ -526,6 +526,12 @@ html, body { height: 100%; }
     background-size: contain;
   }
 
+  .botao-TodosJogadores-header {
+    left: 5px;
+    top: 110px;
+    width: 60px;
+  }
+
   .corpo {
     top: 120px;
     height: calc(100vh - 220px);
@@ -746,6 +752,12 @@ html, body { height: 100%; }
     max-width: 220px;
     height: 60px;
     background-size: contain;
+  }
+
+  .botao-TodosJogadores-header {
+    left: 5px;
+    top: 105px;
+    width: 55px;
   }
 
   .corpo {
