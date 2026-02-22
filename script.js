@@ -130,8 +130,10 @@ function mostrarUsuarios() {
     listaUsuarios.appendChild(li);
   });
 
-  // Alterna visibilidade
-  document.getElementById("resultado").style.display = "none"; // esconde resultado final
+  // Esconde todas as seções anteriores
+  document.getElementById("inicio").style.display = "none";      // esconde página inicial
+  document.getElementById("quiz").style.display = "none";        // esconde quiz
+  document.getElementById("resultado").style.display = "none";   // esconde resultado final
   document.getElementById("usuarios-container").style.display = "block"; // mostra lista de usuários
 }
 
